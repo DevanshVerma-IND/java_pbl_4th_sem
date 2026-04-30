@@ -6,7 +6,7 @@ import java.util.*;
 public class User {
     private static final String URL="jdbc:mysql://localhost:3306/mydb_java";
     private static final String USERNAME="root";
-    private static final String PASSWORD="xxxxxxxxxxx";
+    private static final String PASSWORD="root";
 
     private final String id;
     private final String rollno;
@@ -21,6 +21,12 @@ public class User {
         this.email=email;
         this.status=status;
     }
+
+    // ── Getters (needed by GUI panels) ───────────────────────────────────────
+    public String getId()     { return id; }
+    public String getRollno() { return rollno; }
+    public String getEmail()  { return email; }
+    public String getStatus() { return status; }
 
     void viewProfile(){
         if(status.equals("Student")) {

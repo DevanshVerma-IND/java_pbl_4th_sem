@@ -5,7 +5,7 @@ import java.sql.*;
 public class Communication {
     private static final String URL="jdbc:mysql://localhost:3306/mydb_java";
     private static final String USERNAME="root";
-    private static final String PASSWORD="xxxxxxxxxxxx";
+    private static final String PASSWORD="root";
 
     static void createCommunity(String creator){
         Scanner sc=new Scanner(System.in);
